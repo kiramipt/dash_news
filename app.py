@@ -15,6 +15,7 @@ from dash.dependencies import Input, Output
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__)
+server = app.server
 
 # read data
 DF = pd.read_csv('./data/lenta_ru/gb_filtered.csv')
